@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "hd2ainews"
+version = "0.1.0"
+description = ""
+authors = ["AJXD2 <anthonyjohnkovach@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+hd2ainews = "hd2ainews.main:main"
+cacheupdate = "hd2ainews.scripts.update:main"
+[tool.poetry.dependencies]
+python = "^3.11"
+helldivers-2-api = "^0.0.3"
+rich = "^13.7.1"
+python-dotenv = "^1.0.1"
+google-generativeai = "^0.5.2"
+openai = "^1.26.0"
+elevenlabs = "^1.2.1"
+pydub = "^0.25.1"
+moviepy = "^1.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
